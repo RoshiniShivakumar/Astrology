@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with Logo and Title -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="logo.png" alt="Space Explorer Logo" class="logo">
+            <h1 class="title">Space Explorer</h1>
+        </div>
+
+        <!-- Navigation Bar with Boxed Items -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="/apod" class="nav-box">View Astronomy</a></li>
+                <li><a href="/mars" class="nav-box">Mars Rover Photos</a></li>
+                <li><a href="/neo" class="nav-box">Near Earth Objects</a></li>
+                <li><a href="/earth" class="nav-box">Earth Imagery</a></li>
+                <li><a href="/iss" class="nav-box">ISS Current Location</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Centered White Content Box -->
+    <div class="container-box">
+        <h2>Welcome to Space Explorer</h2>
+        <p>Explore the universe with real-time space data, stunning images, and fascinating insights.</p>
+        <a href="/explore" class="btn">Start Exploring</a>
+    </div>
+
+    <div class="planets-container">
+        <div id="earth" class="planet"></div>
+        <div id="mars" class="planet"></div>
+        <!-- <div id="saturn" class="planet"></div> -->
+    </div>
+    
+    <canvas id="stars"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
